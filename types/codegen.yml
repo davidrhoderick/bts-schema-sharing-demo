@@ -2,9 +2,9 @@ overwrite: true
 schema: "src/schema.graphql"
 documents: "src/queries/**/*.graphql"
 generates:
-  src/generated/index.ts:
+  src/index.ts:
     plugins:
-      - "./src/plugins/gqlWrapper.js"
+      - "src/plugins/gqlWrapper.js"
       - "typescript"
       - "typescript-operations"
       - "typed-document-node"

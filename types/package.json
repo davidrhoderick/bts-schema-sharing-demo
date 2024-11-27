@@ -4,10 +4,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "clean": "rm -rf dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "types": "tsc",
     "codegen": "graphql-codegen",
-    "build": "npm run codegen && npm run types"
+    "build": "npm run clean && npm run codegen && npm run types"
   },
   "author": "",
   "license": "ISC",
